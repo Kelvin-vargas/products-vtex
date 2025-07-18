@@ -38,7 +38,7 @@ const ProductListAxios: React.FC = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
-      {products.slice(0, 3).map((product) => {
+      {products.slice(3, 6).map((product) => {
         const item = product.items[0]
         const image = item?.images[0]?.imageUrl
         const price = item?.sellers[0]?.commertialOffer?.Price
